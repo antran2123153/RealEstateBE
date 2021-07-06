@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const connectToDatabase = require("./config/db");
 const route = require("./routes");
-const port = process.env.PORT | 3000;
+const PORT = process.env.PORT || 3000;
 
 var app = express();
 
@@ -32,8 +32,8 @@ app.use(function (err, req, res, next) {
   res.render("error");
 });
 
-app.listen(port, () => {
-  console.log(`Server running at port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server running at port ${PORT}`);
 });
 
 module.exports = app;
