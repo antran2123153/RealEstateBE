@@ -2,16 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "scripts": {
-    "start": "node index.js"
-  },
-  "devDependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "http-errors": "^1.8.0",
-    "mongoose": "^5.13.0",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.9"
+    "start": "nodemon index.js"
   },
   "main": "app.js",
   "author": "Tran Long An",
@@ -19,6 +10,13 @@
   "description": "Shop app",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^8.5.1"
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.9"
   }
 }
