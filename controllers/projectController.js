@@ -34,17 +34,7 @@ exports.update = async (req, res) => {
     area: req.body.area,
     address: req.body.address,
     introImg: req.body.introImg,
-    descriptions: req.body.descriptions,
-    location: req.body.location,
-    utilities: req.body.utilities,
-    ground: req.body.ground,
-    policy: req.body.policy,
-    descriptionsImg: req.body.descriptionsImg,
-    locationImg: req.body.locationImg,
-    utilitiesImg: req.body.utilitiesImg,
-    groundImg: req.body.groundImg,
-    policyImg: req.body.policyImg,
-    state: req.body.state,
+    body: req.body.body,
   };
 
   Project.findByIdAndUpdate(req.body.id, data, { new: true })
