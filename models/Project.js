@@ -13,6 +13,7 @@ const projectSchema = new mongoose.Schema({
     {
       header: { type: String },
       content: { type: String },
+      id: { type: String },
     },
   ],
   maps: { type: String },
