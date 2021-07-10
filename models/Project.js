@@ -8,7 +8,13 @@ const projectSchema = new mongoose.Schema({
   price: { type: String },
   area: { type: String },
   address: { type: String },
-  body: { type: String },
+  description: { type: String },
+  body: [
+    {
+      header: { type: String },
+      content: { type: String },
+    },
+  ],
   maps: { type: String },
   video: { type: String },
   priority: { type: Number },

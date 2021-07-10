@@ -35,6 +35,7 @@ exports.update = async (req, res) => {
     address: req.body.address,
     introImg: req.body.introImg,
     body: req.body.body,
+    description: req.body.description,
     priority: req.body.priority,
   };
 
