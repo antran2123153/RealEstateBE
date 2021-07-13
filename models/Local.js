@@ -1,18 +1,16 @@
 const mongoose = require("mongoose");
 
 const localSchema = new mongoose.Schema({
-  logo: { type: String, required: true },
-  name: { type: String, required: true },
-  facebook: { type: String, required: true },
-  youtube: { type: String, required: true },
-  twiter: { type: String, required: true },
-  gmail: { type: String, required: true },
-  address: { type: String, required: true },
-  phonenumber1: { type: String, required: true },
-  phonenumber2: { type: String, required: true },
+  logo: { type: String },
+  name: { type: String },
+  facebook: { type: String },
+  youtube: { type: String },
+  twiter: { type: String },
+  gmail: { type: String },
+  address: { type: String },
+  phonenumber: { type: String },
   description: { type: String },
-  footerImg: [String],
-  rightSideImg: [String],
+  rightSideImg: { type: String },
 });
 
 module.exports = mongoose.model("local", localSchema);

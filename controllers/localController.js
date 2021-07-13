@@ -10,10 +10,8 @@ exports.update = async (req, res) => {
     twiter: local.twiter,
     gmail: local.gmail,
     address: local.address,
-    phonenumber1: local.phonenumber1,
-    phonenumber2: local.phonenumber2,
+    phonenumber: local.phonenumber,
     description: local.description,
-    footerImg: local.footerImg,
     rightSideImg: local.rightSideImg,
   };
 
